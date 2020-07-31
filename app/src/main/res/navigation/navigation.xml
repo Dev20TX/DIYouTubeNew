@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.dev20.diyoutube.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_autoFragment2"
+            app:destination="@id/autoFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_techFragment"
+            app:destination="@id/techFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_gardenFragment"
+            app:destination="@id/gardenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/autoFragment"
+        android:name="com.dev20.diyoutube.AutoFragment"
+        android:label="AutoFragment"
+        tools:layout="@layout/fragment_auto"/>
+    <fragment
+        android:id="@+id/techFragment"
+        android:name="com.dev20.diyoutube.TechFragment"
+        android:label="TechFragment"
+        tools:layout="@layout/fragment_tech"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dev20.diyoutube.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/gardenFragment"
+        android:name="com.dev20.diyoutube.GardenFragment"
+        android:label="GardenFragment"
+        tools:layout="@layout/fragment_garden"/>
+    <fragment
+        android:id="@+id/savedVideosFragment"
+        android:name="com.dev20.diyoutube.SavedVideosFragment"
+        android:label="fragment_saved_videos"
+        tools:layout="@layout/fragment_saved_videos" />
+</navigation>
